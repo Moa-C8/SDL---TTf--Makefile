@@ -1,0 +1,20 @@
+CC = gcc
+CFLAGS = -I include
+LDFLAGS = -L lib
+LIBS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_ttf
+LINKs = -mwindows
+
+SRC_DIR = src
+BIN_DIR = bin
+
+SOURCES = $(wildcard $(SRC_DIR)/*.c)
+EXECUTABLE = $(BIN_DIR)/prog
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(SOURCES)
+	$(CC) $(SOURCES) -o $(EXECUTABLE) $(CFLAGS) $(LDFLAGS) $(LIBS) $(LINKs)
+	./$(EXECUTABLE)
+exe:
+	./$(EXECUTABLE)
+
