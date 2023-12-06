@@ -10,7 +10,6 @@ SDL_Window *win = NULL;
 SDL_Renderer *ren = NULL;
 SDL_bool RUN = SDL_TRUE;
 SDL_Event event;
-SDL_PixelFormat *pixelFormat = NULL;
 
 double frame = 0;
 
@@ -44,6 +43,7 @@ void gameLoop(){
         }
     }
     SDL_Color textColor = {255,255,255,255}; // R G B A (A = transparence)
+    SDL_Color color1 = {255,50,80,255};
     SDL_Rect Textframe;  //Cadre du Text
     Textframe.w = 400;
     Textframe.x = (WIDTH/2) - (Textframe.w/2);
@@ -55,7 +55,7 @@ void gameLoop(){
 
     SDL_RenderCopy(ren,textTextureExemple,NULL,&Textframe);
     
-    drawFilledCircle(ren,textColor,300,300,50);
+    drawFilledCircle(ren,color1,300,300,50);
     drawCircle(ren,textColor,200,400,20);
     
     SDL_RenderPresent(ren);
@@ -73,7 +73,6 @@ int main(int argc, char** argv)
         gameLoop();
     }
 
-    SDL_FreeFormat(pixelFormat);
     TTF_Quit();
     SDL_DestroyRenderer(ren);
     SDL_DestroyWindow(win);

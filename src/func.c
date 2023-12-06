@@ -2,7 +2,6 @@
 #include <SDL_ttf.h>
 #include <stdio.h>
 
-#include "func.h"
 
 void drawCircle(SDL_Renderer *ren, SDL_Color color, int centerX, int centerY, int radius) {
     SDL_SetRenderDrawColor(ren, color.r, color.g, color.b, color.a);
