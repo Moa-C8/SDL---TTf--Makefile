@@ -32,6 +32,8 @@ void init(){
         SDL_Quit();
         exit(EXIT_FAILURE);
     }
+
+    SDL_SetWindowTitle(win,"Ex");
 }
 
 void gameLoop(){
