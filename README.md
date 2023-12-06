@@ -1,5 +1,6 @@
 # SDL-TTf-Makefile
 
+##FR
 Ce dossier contient les fichiers nécessaires pour utiliser SDL2 et SDLttf. Il propose aussi un exemple fonctionel qui comprend :
 
 - `main.c` : Le fichier principal du programme.
@@ -7,7 +8,7 @@ Ce dossier contient les fichiers nécessaires pour utiliser SDL2 et SDLttf. Il p
 
 Cet ensemble de fichiers est conçu pour vous aider à démarrer avec SDL2 et SDLttf pour la manipulation de texte et de formes géométriques.
 
-
+##ENG
 This folder contains the files you need to use SDL2 and SDLttf. It also contains a functional example including :
 
 - `main.c` : The main program file.
